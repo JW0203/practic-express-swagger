@@ -3,7 +3,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /users:
+ * /users/test:
  *   get:
  *     summary: 유저 정보 조회
  *     description: 모든 유저 정보를 조회한다.
@@ -20,7 +20,7 @@ const router = express.Router();
  *                    description: The user's name
  */
 
-router.get('/', (req, res) => {
+router.get('/test', (req, res) => {
     res.send("유저 정보 조회")
 })
 
